@@ -8,7 +8,7 @@ let bankBranchInstance;
 class BankBranch {
     constructor(branchInfo) {
         if(bankBranchInstance == null){ //required! if bankBranchInstance doesn't exist yet
-            this.branchInfo = branchInfo; //whatever instance you create, this keyword is pointing to that object which is the first instance
+            this.branchInfo = branchInfo; //whatever instance is created, this keyword points to the object created first (the one which is the first instance)
             bankBranchInstance = this; //bankBranchInstance will take the values of first object it's in
         }
         return bankBranchInstance; //BankBranch returns the first bankBranchInstance
